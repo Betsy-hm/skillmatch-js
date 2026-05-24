@@ -1,15 +1,57 @@
 // SkillMatch JS
 // Projeto em desenvolvimento
 
+
+
+
+
+
+// ── TIPOS DE DADOS: strings, números, arrays, objetos, booleanos ─
+
 // Perfil do candidato
 const candidato = {
   nome: "Anmey Manriquez",
   email: "anmey@email.com",
-  ativo: true,
-  experiencia: 11,
-  habilidades: ["HTML", "CSS", "JavaScript", "Lógica de Programação", "Git"]
+  ativo: true,                                // booleano
+  experiencia: 11,                             // numero
+  habilidades: ["HTML", "CSS", "JavaScript", "Lógica de Programação", "Git"] // array
 };
 
+// Classe Vaga com constructor, atributos e metodos
+class Vaga {
+  constructor(empresa, cargo, requisitos, descricao) {
+    this.empresa    = empresa;
+    this.cargo      = cargo;
+    this.requisitos = requisitos;
+    this.descricao  = descricao;
+  }
+
+  exibirResumo() {
+    console.log("\n" + this.empresa + " | " + this.cargo);
+    console.log("Requisitos: " + this.requisitos.join(", "));
+    console.log(this.descricao);
+  }
+
+  calcularCompatibilidade(habilidadesCandidato) {
+    const possuidas = this.requisitos.filter(req =>
+      habilidadesCandidato.includes(req)
+    );
+    return Math.round((possuidas.length / this.requisitos.length) * 100);
+  }
+}
+
+// RF10: Heranca com VagaFrontEnd extends Vaga
+class VagaFrontEnd extends Vaga {
+  constructor(empresa, cargo, requisitos, descricao, framework) {
+    super(empresa, cargo, requisitos, descricao);
+    this.framework = framework;
+  }
+
+  exibirResumo() {
+    super.exibirResumo();
+    console.log("Framework: " + this.framework);
+  }
+}
 // Lista de vagas (objetos literais por enquanto)
 const vagas = [
   { empresa: "TechNova",   cargo: "Dev Front-End Junior",    requisitos: ["HTML","CSS","JavaScript","React","Git"]                  },
@@ -21,3 +63,4 @@ const vagas = [
 
 console.log("Candidato:", candidato.nome);
 console.log("Vagas encontradas:", vagas.length);
+
