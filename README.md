@@ -104,7 +104,7 @@ skillmatch-js/
  
 ### Tipos de dados
  
-O objeto `candidato` utiliza os cinco tipos exigidos:
+O objeto `candidato` utiliza os cinco tipos:
  
 - strings;
 - números;
@@ -437,6 +437,10 @@ A organização das branches, a criação de commits progressivos e a sincroniza
  
 ---
  
+# Licença
+
+Projeto acadêmico desenvolvido para fins educacionais.
+
 ## Autora
  
 Projeto desenvolvido por Betsy Manriquez.
