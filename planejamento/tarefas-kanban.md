@@ -1,148 +1,77 @@
-# Kanban — SkillMatch JS
+# Kanban - SkillMatch JS
 
-Status do Projeto: Em fase final de validação  
 Progresso geral: 90%
 
 ---
 
-# A FAZER (To Do)
+## TO DO
 
-## BLOCO 9 — FINALIZAÇÃO
-
+### BLOCO 9 - FINALIZACAO
 Prioridade: Alta
 
-- Preparar demonstração completa do sistema
-- Revisar funcionamento geral do projeto
+- Preparar demonstracao completa do sistema
 - Revisar README final
-- Revisar links do GitHub e Kanban
-- Organizar estrutura final do repositório
-- Validar todos os requisitos obrigatórios
+- Validar todos os requisitos obrigatorios
 - Entregar projeto
 
 ---
 
-# EM PROGRESSO (In Progress)
+## IN PROGRESS
 
-## BLOCO 9 — FINALIZAÇÃO
-
+### BLOCO 9 - FINALIZACAO
 Prioridade: Alta
 
-- Gravar vídeo explicativo de até 5 minutos demonstrando o sistema
-- Realizar testes finais de execução
-- Revisar saída do console
-- Conferir compatibilidade das funções
-- Ajustar detalhes visuais da apresentação
+- Gravar video explicativo de ate 5 minutos
+- Realizar testes finais de execucao
+- Revisar saida do console
 
 ---
 
-# CONCLUÍDO (Done)
+## DONE
 
-## BLOCO 1 — PREPARAÇÃO DO AMBIENTE
+### BLOCO 1 - PREPARACAO DO AMBIENTE
+- Criar estrutura de pastas e arquivos
+- Organizar ambiente de desenvolvimento
 
-Prioridade: Alta
-
-- Criar estrutura de pastas e arquivos do projeto
-- Organizar ambiente inicial de desenvolvimento
-
----
-
-## BLOCO 2 — CONFIGURAÇÃO DO PROJETO
-
-Prioridade: Alta
-
-- Criar repositório público no GitHub
+### BLOCO 2 - CONFIGURACAO DO PROJETO
+- Criar repositorio publico no GitHub
 - Abrir projeto no VS Code
-- Configurar estrutura inicial
-- Criar branches obrigatórias
+- Criar branches obrigatorias
 
----
-
-## BLOCO 3 — VERSIONAMENTO E FLUXO DE TRABALHO
-
-Prioridade: Alta
-
+### BLOCO 3 - VERSIONAMENTO
 - Realizar commits progressivos
-- Revisar histórico de commits
-- Revisar branches obrigatórias
 - Aplicar GitFlow simplificado
+- Revisar historico de commits e branches
 
----
-
-## BLOCO 4 — ORGANIZAÇÃO E PLANEJAMENTO
-
-Prioridade: Média
-
-- Criar quadro Kanban
+### BLOCO 4 - ORGANIZACAO E PLANEJAMENTO
+- Criar quadro Kanban no Trello
 - Adicionar tarefas do projeto
-- Organizar planejamento das atividades
-- Definir sequência de desenvolvimento
+- Definir sequencia de desenvolvimento
 
----
-
-## BLOCO 5 — DESENVOLVIMENTO DO SISTEMA
-
-Prioridade: Alta
-
+### BLOCO 5 - DESENVOLVIMENTO DO SISTEMA
 - Criar objeto candidato
-- Criar classes e herança
 - Criar lista de vagas
-- Implementar análise de compatibilidade
+- Implementar classes e heranca
+- Implementar analise de compatibilidade
 - Implementar habilidades faltantes
-- Implementar recomendação de estudos
+- Implementar recomendacao de estudos
 - Implementar melhor vaga
-- Ajustar cálculos de compatibilidade
-- Revisar lógica principal do sistema
 
----
-
-## BLOCO 6 — RECURSOS OBRIGATÓRIOS DE JAVASCRIPT
-
-Prioridade: Alta
-
-- Implementar métodos de array
+### BLOCO 6 - JAVASCRIPT AVANCADO
+- Implementar metodos de array
 - Implementar callback
 - Implementar closure
 - Implementar Promise
 - Implementar async/await
-- Validar uso de objetos e arrays
-- Revisar uso de operadores lógicos e matemáticos
 
----
+### BLOCO 7 - MELHORIAS
+- Organizar saida do console
+- Revisar organizacao do codigo
+- Ajustar estrutura de funcoes
 
-## BLOCO 7 — PERSONALIZAÇÃO E MELHORIAS
-
-Prioridade: Média
-
-- Melhorar visual da saída no console
-- Organizar mensagens exibidas
-- Documentar lógica principal do sistema
-- Revisar organização do código
-- Ajustar estrutura de funções
-
----
-
-## BLOCO 8 — TESTES E DOCUMENTAÇÃO
-
-Prioridade: Alta
-
-- Testar sistema completo
+### BLOCO 8 - TESTES E DOCUMENTACAO
+- Testar sistema no console do Chrome
 - Corrigir erros encontrados
-- Revisar funções principais
-- Criar README técnico
-- Adicionar explicações técnicas
-- Validar requisitos finais
-- Revisar clareza da documentação
-
----
-
-## Observações
-
-Durante o desenvolvimento do projeto foram realizados testes contínuos para validar:
-- cálculos de compatibilidade;
-- funcionamento da herança;
-- execução assíncrona com Promise;
-- uso correto de métodos de array;
-- organização geral do sistema.
-
-O projeto foi desenvolvido utilizando JavaScript moderno com foco em lógica de programação, clareza do código e aplicação prática dos conceitos do módulo.
+- Criar README completo
+- Validar requisitos finais do modulo
 
