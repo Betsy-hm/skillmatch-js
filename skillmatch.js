@@ -1,10 +1,12 @@
-// SkillMatch JS
-// Projeto em desenvolvimento
-
-
-
-
-
+// ================================================================
+// SkillMatch JS – Simulador de Compatibilidade com Vaga FE Júnior
+// ================================================================
+// Descrição: Compara habilidades do candidato com vagas de front-end
+// Execução :
+// - Console do navegador (Chrome DevTools)
+// - VS Code com extensão Code Runner
+// - Ambientes online de JavaScript
+// ================================================================
 
 // TIPOS DE DADOS: strings, números, arrays, objetos, booleanos ─
 
