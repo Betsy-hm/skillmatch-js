@@ -181,3 +181,65 @@ function analisarVagas(perfil, listaVagas, callback) {
   // chama o callback com os resultados
   callback(resultados, melhor, vagasAltas, vagaPerfeita, htmlEmTodas);
 }
+
+
+// Promise – simula busca de vagas em uma API 
+function buscarVagasOnline() {
+  return new Promise((resolve) => {
+    console.log("Buscando vagas na plataforma (simulacao de rede)...");
+    setTimeout(() => resolve(vagas), 1200);  // simula latência de rede
+  });
+}
+ 
+// async/await – função principal do sistema ──────────────
+async function iniciarSistema() {
+   console.log("╔════════════════════════════════════════════╗");
+   console.log("║   SkillMatch JS – Simulador de Vagas FE    ║");
+   console.log("╚════════════════════════════════════════════╝");
+ 
+   console.log(`\n Candidato  : ${candidato.nome}, ${candidato.experiencia} meses de experiencia`);
+   console.log(` E-mail     : ${candidato.email}`);
+   console.log(` Ativo      : ${candidato.ativo}`);
+   console.log(`  Habilidades: ${candidato.habilidades.join(", ")}\n`);
+ 
+  // await aguarda a Promise resolver antes de continuar
+  const vagasCarregadas = await buscarVagasOnline();
+  console.log(`\n ${vagasCarregadas.length} vagas carregadas com sucesso!\n`);
+ 
+  analisarVagas(
+    candidato,
+    vagasCarregadas,
+ 
+    // função callback chamada ao final da análise 
+    (resultados, melhor, vagasAltas, vagaPerfeita, htmlEmTodas) => {
+      console.log("\n" + "═".repeat(46));
+      console.log("               RESULTADO FINAL");
+      console.log("═".repeat(46));
+ 
+      // melhor vaga
+      console.log(`\n Melhor compatibilidade:`);
+      console.log(`   ${melhor.vaga.empresa} – ${melhor.vaga.cargo}: ${melhor.percentual}%`);
+ 
+      // recomendação de estudo
+      console.log(`\n${gerarRecomendacao(melhor.faltantes)}`);
+ 
+      // operador ternário (opcional)
+      const msgPerfeita = vagaPerfeita
+        ? ` Vaga com 100% encontrada: ${vagaPerfeita.vaga.empresa}!`
+        : "[i]  Nenhuma vaga com 100% de compatibilidade.";
+      console.log(`\n${msgPerfeita}`);
+ 
+      // operadores lógicos e matemáticos
+      const aproveitamento = Math.round((vagasAltas.length / resultados.length) * 100);
+      console.log(`\n Vagas com alta compatibilidade: ${vagasAltas.length} de ${resultados.length} (${aproveitamento}%)`);
+      console.log(` HTML exigido em todas as vagas : ${htmlEmTodas ? "Sim " : "Não "}`);
+      console.log(` Total de análises realizadas  : ${contador.obterTotal()}`);
+ 
+      console.log("\n SkillMatch JS encerrado com sucesso!");
+      console.log("═".repeat(46));
+    }
+  );
+}
+ 
+// ── Inicia o sistema ─────────────────────────────────────────────
+iniciarSistema();
