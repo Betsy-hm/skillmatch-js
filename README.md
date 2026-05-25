@@ -436,6 +436,12 @@ A implementação de Promise e `async/await` exigiu compreensão do funcionament
 A organização das branches, a criação de commits progressivos e a sincronização do repositório também representaram um desafio importante durante o desenvolvimento.
  
 ---
+
+## Vídeo de apresentação
+
+Vídeo demonstrando o funcionamento do sistema:
+
+https://drive.google.com/file/d/1kERwgwmboxR8Cm-8PRZgo2w0yZsoECJI/view?usp=drive_link
  
 # Licença
 
